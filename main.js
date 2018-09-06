@@ -12,7 +12,7 @@ var prompts = [
 	'You have been named president for a day. What do you do?'
 ];
 
-if (index !== 0) {
+if (index !== 0 && localStorage.id !== undefined) {
   document.getElementById('prompt').innerHTML = prompts[index - 1];
   document.getElementById('submit').disabled = false;
 }
@@ -39,6 +39,7 @@ function saveResponse(e) {
     document.getElementById('responseInput').value = '';
     document.getElementById('nameInput').value = '';
     document.getElementById('emailInput').value = '';
+    localStorage.id = Chance.guid();
   }
   e.preventDefault();
 }
