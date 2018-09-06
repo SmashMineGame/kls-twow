@@ -42,16 +42,14 @@
 
     <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
     <script>
-      // Initialize Firebase
-      var config = {
+      firebase.initializeApp({
         apiKey: "AIzaSyAF6ksxWoDZ1yLa8luJNrcldby23x4lDaI",
         authDomain: "kls-twow-db.firebaseapp.com",
         databaseURL: "https://kls-twow-db.firebaseio.com",
         projectId: "kls-twow-db",
         storageBucket: "kls-twow-db.appspot.com",
         messagingSenderId: "574251910167"
-      };
-      firebase.initializeApp(config);
+      });
     </script>
     <script src="main.js"></script>
   </body>
