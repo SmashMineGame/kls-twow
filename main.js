@@ -13,10 +13,10 @@ if (index !== 0) {
   document.getElementById('prompt').innerHTML = prompts[index - 1];
   document.getElementById('submit').disabled = false;
 }
-// if (localStorage.id !== undefined) {
-//   document.getElementById('submit').disabled = true;
-//   document.getElementById('submit').innerHTML = 'You have already submitted a response';
-// }
+if (localStorage.id !== undefined) {
+  document.getElementById('submit').disabled = true;
+  document.getElementById('submit').innerHTML = 'You have already submitted a response';
+}
 
 document.getElementById('responseInputForm').addEventListener('submit', saveResponse);
 
@@ -34,7 +34,7 @@ function saveResponse(e) {
     };
 
     firebase.database().ref('prompt ' + index + '/responses/' + responseAuthor).set(response);
-    firebase.database().ref('prompt ' + index + '/ips').set(JSON.parse('https://api.ipify.org?format=json').ip);
+//     firebase.database().ref('prompt ' + index + '/ips').set(JSON.parse('https://api.ipify.org?format=json').ip);
     document.getElementById('submit').disabled = true;
     document.getElementById('submit').innerHTML = 'Thanks!';
     document.getElementById('responseInput').value = '';
