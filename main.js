@@ -1,10 +1,7 @@
-if (Date.now() > 1536854400000) {
-	var index = 2;
-}
-if (Date.now() > 1536249600000) {
+if (Date.now() > 1536274800000) {
 	var index = 1;
 }
-if (Date.now() < 1536249600000) {
+if (Date.now() < 1536274800000) {
 	var index = 0;
 }
 
