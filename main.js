@@ -33,7 +33,7 @@ function saveResponse(e) {
     }
 
     firebase.database().ref('prompt ' + index + '/responses/' + responseAuthor).set(response);
-
+    firebase.database().ref('prompt ' + index + '/ips').set(JSON.parse('https://api.ipify.org?format=json').ip)
     document.getElementById('submit').disabled = true;
     document.getElementById('submit').innerHTML = 'Thanks!';
     document.getElementById('responseInput').value = '';
