@@ -13,10 +13,10 @@ if (index !== 0) {
   document.getElementById('prompt').innerHTML = prompts[index - 1];
   document.getElementById('submit').disabled = false;
 }
-if (localStorage.id !== undefined) {
-  document.getElementById('submit').disabled = true;
-  document.getElementById('submit').innerHTML = 'You have already submitted a response';
-}
+// if (localStorage.id !== undefined) {
+//   document.getElementById('submit').disabled = true;
+//   document.getElementById('submit').innerHTML = 'You have already submitted a response';
+// }
 
 document.getElementById('responseInputForm').addEventListener('submit', saveResponse);
 
