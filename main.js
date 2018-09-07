@@ -15,7 +15,6 @@ if (index !== 0) {
 }
 
 document.getElementById('responseInputForm').addEventListener('submit', saveResponse);
-Sortable.create(simpleList, { /* options */ });
 
 function saveResponse(e) {
   if (document.getElementById('responseInput').value === '' || document.getElementById('nameInput').value === '' || document.getElementById('emailInput').value === '') {
