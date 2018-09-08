@@ -1,3 +1,5 @@
+document.write(respondHTML);
+
 if (Date.now() > 1536274800000) {
 	var index = 1;
 }
