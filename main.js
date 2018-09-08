@@ -1,3 +1,5 @@
+document.getElementByID('container').innerHTML += respondHTML;
+document.getElementByID('container').innerHTML += voteHTML;
 if (Date.now() > 1536274800000) {
 	var index = 1;
 }
