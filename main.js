@@ -9,7 +9,7 @@ if (Date.now() < 1536274800000) {
 }
 
 if (index !== 0) {
-  document.getElementById('prompt').innerHTML = firebase.database().ref('prompts/' + index);
+  document.getElementById('prompt').innerHTML = firebase.database().ref('prompts')[index];
   document.getElementById('submit').disabled = false;
 }
 
