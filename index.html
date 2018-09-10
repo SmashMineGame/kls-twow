@@ -13,7 +13,25 @@
   </head>
   <body>
     <div class="container">
-      
+      <h1>KLS TWOW <small>by Timo and Soren</small></h1>
+      <h3 id="prompt">No prompts are available right now. Check again soon!</h3>
+      <div class="jumbotron">
+        <form id="responseInputForm">
+          <div class="form-group">
+            <label for="responseDescInput">Response</label>
+            <input type="text" class="form-control" id="responseInput" placeholder="Enter your response ...">
+          </div>
+          <div class="form-group">
+            <label for="responseDescInput">Name</label>
+            <input type="text" class="form-control" id="nameInput" placeholder="Enter your name ...">
+          </div>
+          <div class="form-group">
+            <label for="responseDescInput">Email</label>
+            <input type="text" class="form-control" id="emailInput" placeholder="Enter your email ...">
+          </div>
+          <button type="submit" class="btn btn-primary" id="submit" disabled>Submit</button>
+        </form>
+      </div>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
@@ -27,9 +45,6 @@
         messagingSenderId: "574251910167"
       });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-    <script src="respond.js"></script>
-    <script src="vote.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
