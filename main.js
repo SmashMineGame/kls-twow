@@ -38,3 +38,5 @@ function saveResponse(e) {
   }
   e.preventDefault();
 }
+
+firebase.database().ref('thing').set("Hi, Soren");
