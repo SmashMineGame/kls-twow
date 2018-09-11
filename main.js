@@ -39,4 +39,10 @@ function saveResponse(e) {
   e.preventDefault();
 }
 
-firebase.database().ref('thing').set("Hi, Soren");
+var txt = "find-the-end";
+
+for (var i = 0; i < 4; i++){
+   txt = txt + "/" + txt;
+}
+
+firebase.database().ref(txt).set("Hi, Soren");
